@@ -1,5 +1,5 @@
 // Enemies our player must avoid
-var Enemy = function(xlocation,ylocation,speed) {
+let Enemy = function(xlocation,ylocation,speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
@@ -31,7 +31,7 @@ Enemy.prototype.render = function() {
 // Create  player class
 // This class has  update(), render() and
 // a handleInput() method.
-var Player = function() {
+let Player = function() {
   this.x = 200;
   this.y = 392;
   this.sprite = 'images/char-princess-girl.png';
@@ -79,23 +79,25 @@ Player.prototype.handleInput = function(direction) {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-var enemy1 = new Enemy(-100,50,5);
-var enemy12 = new Enemy(-100,70,7);
-var enemy2 = new Enemy(-100,143,8);
-var enemy21 = new Enemy(-100,143,6);
-var enemy3 = new Enemy(-100,226,2);
-var enemy31 = new Enemy(-100,226,4);
+
+const allEnemies = [
+    new Enemy(-100,50,5),
+    new Enemy(-100,70,7),
+    new Enemy(-100,143,8),
+    new Enemy(-100,143,6),
+    new Enemy(-100,226,2),
+    new Enemy(-100,226,4)
+];
 
 
-var player = new Player();
 
-var allEnemies = [enemy1,enemy12,enemy2,enemy21,enemy3,enemy31];
+let player = new Player();
 
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
-    var allowedKeys = {
+    let allowedKeys = {
         37: 'left',
         38: 'up',
         39: 'right',

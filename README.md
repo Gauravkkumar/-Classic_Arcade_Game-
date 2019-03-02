@@ -1,5 +1,6 @@
 # Udacity Classic Arcade Game  - Project 3
 
+https://gauravkkumar.github.io/Classic_Arcade_Game/
 
 **Summary:**
 This is a project to test a Arcade Game for Udacity Front End Web Developer Nanodegree.
