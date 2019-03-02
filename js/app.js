@@ -47,7 +47,7 @@ Player.prototype.update = function(dt) {
   //set the collision condition
   for (var i = 0; i < allEnemies.length; i++) {
     var enemy = allEnemies[i];
-    if (enemy.y === this.y && enemy.x + 60 >= this.x - 40  && enemy.x - 60 <= this.x + 40) {
+    if (enemy.y === this.y && enemy.x + 45 >= this.x - 35  && enemy.x - 40 <= this.x + 35) {
       this.x = 200;
       this.y = 392;
       alert("Better Luck Next Time.Try Again");
